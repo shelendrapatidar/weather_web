@@ -60,6 +60,9 @@ input2.addEventListener("keydown", function (event) {
 btn1.addEventListener("click", () => {
 	// location.reload();
 	getLocation();
+	if(!search_weather.classList.contains("hidden")){
+		search_weather.classList.add("hidden");
+	}
 });
 btn2.addEventListener("click", () => {
 	if (!main.classList.contains("hidden")) {
