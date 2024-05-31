@@ -88,6 +88,7 @@ function display2(show, sibling, element) {
 	sibling.insertAdjacentElement("afterend", element);
 }
 function changeUI(data) {
+    console.log(data);
 	locate.innerText = data.name;
 	longitude.innerText = data.coord.lon;
 	latitude.innerText = data.coord.lat;
@@ -120,7 +121,7 @@ async function showPosition(position) {
 
 async function weather_city(city_name) {
 	let response = await fetch(
-		`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_KEY}`
+		https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_KEY}
 	);
 	let data = await response.json();
 	// console.dir(data);
@@ -128,7 +129,7 @@ async function weather_city(city_name) {
 }
 async function weather_location(latitude, longitude) {
 	let response = await fetch(
-		`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
+		https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}
 	);
 	let data = await response.json();
 	// console.dir(data);
