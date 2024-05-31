@@ -1,4 +1,4 @@
-let API_KEY = "2a4a6b79892da20dc9fb4c853eb057ff";
+let API_KEY = "669fe736ad449ae4740bc9fcef4c825e";
 let btn1 = document.querySelector(".btn1");
 let btn2 = document.querySelector(".btn2");
 let btn3 = document.querySelector(".btn3");
